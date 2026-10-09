@@ -21,6 +21,10 @@ class User extends Database
         }
     }
 
+    /**
+     * Log out the current user by clearing all session data
+     * and redirecting them to the main views directory.
+     */
     public function logout(){
         session_start();
         session_unset();
